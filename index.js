@@ -16,7 +16,7 @@ app.use('/user', userRoute);
 
 // MongoDB connection
 mongoose.connect(process.env.DB_HOST, {
-    dbName: process.env.DB_NAME
+    dbName: process.env.DB_NAME,
 }).then(() => console.log('MongoDB Connected'))
     .catch(err => console.error(err));
 
